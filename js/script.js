@@ -1,20 +1,27 @@
-﻿  $( function() {
-    $( "#tabs" ).tabs();
-  } );
-  
-    $( function() {
-    var tooltips = $( "[title]" ).tooltip({
-      position: {
-        my: "left top",
-        at: "right+5 top-5",
-        collision: "none"
-      }
+﻿$('.help').on('click', function (){
+	$('.clarification').fadeIn();
+});
+
+$('.hint').hover(
+    function(){
+        $(this).next('.clarification').stop().fadeIn();
+},
+    function(){
+        $('.clarification').stop().fadeOut();
+});
+
+
+$(function() {
+        $("#content div").hide();
+        $("#tabs li:first").attr("id","current");
+        $("#content div:first").fadeIn();
+ 
+    $('#tabs a').click(function(e) {
+        e.preventDefault();
+        $("#content div").hide();
+        $("#tabs li").attr("id","");
+        $(this).parent().attr("id","current");
+        $('#' + $(this).attr('title')).fadeIn();
     });
-    $( "<button>" )
-      .text( "Show help" )
-      .button()
-      .on( "click", function() {
-        tooltips.tooltip( "open" );
-      })
-      .insertAfter( "form" );
-  } );
+})();
+

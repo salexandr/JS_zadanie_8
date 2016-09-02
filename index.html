@@ -5,48 +5,63 @@
   <title>Домашнее задание Java Script №7-8</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
  </head>
- <body>
  
-     <div id="tabs">
-         <ul>
-             <li><a class="item1" href="#tabs-1">Статья 1</a></li>
-             <li><a href="#tabs-2">Статья 2</a></li>
-             <li><a href="#tabs-3">Статья 3</a></li>
-	         <li><a href="#tabs-4">Форма</a></li>
+ <body>
+     <div class="wrapper">
+         <ul id="tabs">
+             <li><a title="tab1" href="#">Статья 1</a></li>
+             <li><a title="tab2" href="#">Статья 2</a></li>
+             <li><a title="tab3" href="#">Статья 3</a></li>
+	         <li><a title="tab4" href="#">Форма</a></li>
          </ul>
-         <div id="tabs-1">
-             <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
-         </div>
-         <div id="tabs-2">
-             <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
-         </div>
-         <div id="tabs-3">
-             <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
-             <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
-         </div>
-         <div id="tabs-4">
-        
-             <form>
-                 <fieldset>
-                     <div>
-                         <label for="firstname">Имя</label>
-                         <input id="firstname" name="firstname" title="Введите Имя">
-                     </div>
-                     <div>
-                         <label for="lastname">Фамилия</label>
-                         <input id="lastname" name="lastname" title="Введите фамилию">
-                     </div>
-                     <div>
-                         <label for="address">E-mail</label>
-                         <input id="address" name="address" title="Введите E-mail">
-                     </div>
-                 </fieldset>
-             </form>
-		
+         <div id="content">
+             <div id="tab1">
+                 <p> 
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque molestie aliquet laoreet. Quisque sagittis finibus nulla. Mauris tempus lectus tortor, ac ultrices nunc semper vel. Integer in dui sapien. Phasellus a faucibus turpis. Etiam consectetur turpis orci, a pulvinar magna tincidunt sit amet. Proin a quam ac turpis ornare gravida. Integer cursus commodo nunc id egestas. Mauris vitae rhoncus erat.
+                     Phasellus nisl nibh, sollicitudin nec maximus eu, pulvinar vitae nibh. Sed varius sed felis vitae finibus. Sed sodales facilisis convallis. Curabitur efficitur libero nunc, nec mattis massa varius mollis. Nulla vulputate felis ac mollis tempus. Quisque ornare gravida tempus. Proin maximus odio metus, vitae accumsan mauris suscipit vel. Aenean ullamcorper augue ante, ac euismod lectus condimentum at. Integer sagittis mauris nec enim placerat dapibus. Pellentesque scelerisque risus vestibulum pharetra tempus. Quisque lacinia venenatis justo. In tincidunt eros quis ante ullamcorper, non congue augue hendrerit. Praesent feugiat velit vel condimentum volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sem ipsum, pharetra sed iaculis mollis, aliquam et sapien. Etiam volutpat feugiat lacus vitae malesuada.
+                     Sed velit ligula, feugiat eget leo eu, auctor pharetra metus. Vestibulum nec vulputate risus. Integer blandit posuere enim ut fermentum. Fusce nec consectetur risus, sit amet consequat nisi. Nunc nec mauris molestie, rutrum arcu ut, luctus risus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In sed velit volutpat, cursus arcu a, eleifend nisi.
+                     Etiam eu ante nisl. Cras ultrices tellus ut velit posuere, eu pellentesque sapien sagittis. Maecenas dolor ante, rhoncus eu augue et, pharetra condimentum erat. Nunc suscipit pretium nisl dapibus gravida. Duis ut vulputate mi. Sed feugiat aliquam velit. Integer non augue a erat dignissim ultrices. Mauris suscipit turpis eu dolor iaculis, eget egestas tellus bibendum. Cras tristique nisl sit amet mi rhoncus efficitur. Donec sagittis finibus nibh, ut volutpat magna scelerisque nec. Nam sed volutpat urna, sit amet ultrices nisl. Aliquam nunc magna, sagittis ac felis a, faucibus interdum lorem. Phasellus at venenatis nisi. Suspendisse rhoncus tempor enim nec sollicitudin. Nam feugiat aliquam vestibulum. Aliquam metus lacus, pellentesque in dictum eu, volutpat sit amet eros.
+                     Donec auctor congue massa eu pulvinar. Nunc mattis ligula metus, eget mattis elit fringilla vitae. Etiam suscipit tortor id malesuada ornare. Nunc placerat porta augue. Cras ullamcorper ipsum augue, non congue eros pellentesque gravida. Etiam vel dapibus neque. Donec bibendum auctor semper. Nulla fringilla ut dolor at congue. Vestibulum auctor congue ultricies. In hac habitasse platea dictumst. Pellentesque nulla ex, rhoncus ac tellus a, laoreet sollicitudin lacus. Phasellus commodo maximus mi. Nullam tincidunt felis porttitor placerat congue. Morbi vestibulum ipsum ut magna vestibulum ultrices. Fusce eu enim fermentum, mollis sem et, ultrices enim. 
+			     </p>
+             </div>
+             <div id="tab2">
+                 <p>
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque molestie aliquet laoreet. Quisque sagittis finibus nulla. Mauris tempus lectus tortor, ac ultrices nunc semper vel. Integer in dui sapien. Phasellus a faucibus turpis. Etiam consectetur turpis orci, a pulvinar magna tincidunt sit amet. Proin a quam ac turpis ornare gravida. Integer cursus commodo nunc id egestas. Mauris vitae rhoncus erat.
+                     Phasellus nisl nibh, sollicitudin nec maximus eu, pulvinar vitae nibh. Sed varius sed felis vitae finibus. Sed sodales facilisis convallis. Curabitur efficitur libero nunc, nec mattis massa varius mollis. Nulla vulputate felis ac mollis tempus. Quisque ornare gravida tempus. Proin maximus odio metus, vitae accumsan mauris suscipit vel. Aenean ullamcorper augue ante, ac euismod lectus condimentum at. Integer sagittis mauris nec enim placerat dapibus. Pellentesque scelerisque risus vestibulum pharetra tempus. Quisque lacinia venenatis justo. In tincidunt eros quis ante ullamcorper, non congue augue hendrerit. Praesent feugiat velit vel condimentum volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sem ipsum, pharetra sed iaculis mollis, aliquam et sapien. Etiam volutpat feugiat lacus vitae malesuada.
+                     Sed velit ligula, feugiat eget leo eu,ae. Etiam suscipit tortor id malesuada ornare. Nunc placerat porta augue. Cras ullamcorper ipsum augue, non congue eros pellentesque gravida. Etiam vel dapibus neque. Donec bibendum auctor semper. Nulla fringilla ut dolor at congue. Vestibulum auctor congue ultricies. In hac habitasse platea dictumst. Pellentesque nulla ex, rhoncus ac tellus a, laoreet sollicitudin lacus. Phasellus commodo maximus mi. Nullam tincidunt felis porttitor placerat congue. Morbi vestibulum ipsum ut magna vestibulum ultrices. Fusce eu enim fermentum, mollis sem et, ultrices enim.
+                 </p>
+             </div>
+             <div id="tab3">
+                 <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+                 <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque molestie aliquet laoreet. Quisque sagittis finibus nulla. Mauris tempus lectus tortor, ac ultrices nunc semper vel. Integer in dui sapien. Phasellus a faucibus turpis. Etiam consectetur turpis orci, a pulvinar magna tincidunt sit amet. Proin a quam ac turpis ornare gravida. Integer cursus commodo nunc id egestas. Mauris vitae rhoncus erat.
+                    Phasellus nisl nibh, sollicitudin nec maximus eu, pulvinar vitae nibh. Sed varius sed felis vitae finibus. Sed sodales facilisis convallis. Curabitur efficitur libero nunc, nec mattis massa varius mollis. Nulla vulputate felis ac mollis tempus. Quisque ornare gravida tempus. Proin maximus odio metus, vitae accumsan mauris suscipit vel. Aenean ullamcorper augue ante, ac euismod lectus condimentum at. Integer sagittis mauris nec enim placerat dapibus. Pellentesque scelerisque risus vestibulum pharetra tempus. Quisque lacinia venenatis justo. In tincidunt eros quis ante ullamcorper, non congue augue hendrerit. Praesent feugiat velit vel condimentum volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sem ipsum, pharetra sed iaculis mollis, aliquam et sapien. Etiam volutpat feugiat lacus vitae malesuada.
+                    Sed velit ligula, feugiat eget leo eu, auctor pharetra metus. Vestibulum nec vulputate risus. Integer blandit posuere enim ut fermentum. Fusce nec consectetur risus, sit amet consequat nisi. Nunc nec mauris molestie, rutrum arcu ut, luctus risus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In sed velit volutpat, cursus arcu a, eleifend nisi.
+                    Etiam eu ante nisl. Cras ultrices tellus ut velit posuere, eu pellentesque sapien sagittis. Maecenas dolor ante, rhoncus eu augue et, pharetra condimentum erat. Nunc suscipit pretium nisl dapibus gravida. Duis ut vulputate mi. Sed feugiat aliquam velit. Integer non augue a erat dignissim ultrices. Mauris suscipit turpis eu dolor iaculis, eget egestas tellus bibendum. Cras tristique nisl sit amet mi rhoncus efficitur. Donec sagittis finibus nibh, ut volutpat magna scelerisque nec. Nam sed volutpat urna, sit amet ultrices nisl. Aliquam nunc magna, sagittis ac felis a, faucibus interdum lorem. Phasellus at venenatis nisi. Suspendisse rhoncus tempor enim nec sollicitudin. Nam feugiat aliquam vestibulum. Aliquam metus lacus, pellentesque in dictum eu, volutpat sit amet eros.
+                    Donec auctor congue massa eu pulvinar. Nunc mattis ligula metus, eget mattis elit fringilla vitae. Etiam suscipit tortor id malesuada ornare. Nunc placerat porta augue. Cras ullamcorper ipsum augue, non congue eros pellentesque gravida. Etiam vel dapibus neque. Donec bibendum auctor semper. Nulla fringilla ut dolor at congue. Vestibulum auctor congue ultricies. In hac habitasse platea dictumst. Pellentesque nulla ex, rhoncus ac tellus a, laoreet sollicitudin lacus. Phasellus commodo maximus mi. Nullam tincidunt felis porttitor placerat congue. Morbi vestibulum ipsum ut magna vestibulum ultrices. Fusce eu enim fermentum, mollis sem et, ultrices enim. Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.
+                 </p>
+             </div>
+             <div id="tab4">
+                 <form action="#" method="POST">
+			 
+                     <p class="conteiner"><label for="firstname">Имя</label>
+                     <input id="firstname" class="hint" type="text">
+					 <span class="clarification">Введите имя</span></p>						 
+						 
+                     <p class="conteiner"><label for="lastname">Фамилия</label>
+                     <input id="lastname" class="hint">
+    				 <span class="clarification">Введите фамилию</span></p>						 
+
+                     <p class="conteiner"><label for="address">E-mail</label>
+                     <input id="address" class="hint">
+			     	 <span class="clarification">Введите E-mail</span></p>
+                     <button class="help" type="button">ПОМОЩЬ</button>	
+					 
+                 </form>
+             </div>
+		 
          </div>
      </div>
  
